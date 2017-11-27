@@ -189,7 +189,7 @@ h2 {
 p {
   width: 95%;
   height: auto;
-  color: rgb(74, 74, 74);
+  color: rgb(110, 110, 110);
   font-size: 0.875rem;
   font-weight: 100;
   text-align: left;
@@ -202,7 +202,7 @@ p {
   font-size: 0.75rem;
   font-weight: normal;
   text-align: left;
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
 }
 
 .info-item {
@@ -218,7 +218,7 @@ p {
   margin: 1rem;
 }
 
-.info-item-image img{
+.info-item-image img {
   width: 100%;
   height: auto;
 }
@@ -246,5 +246,62 @@ p {
 }
 
 #guest-lecture {
-  background-color: rgb(216, 216, 216)
+  background-color: rgb(216, 216, 216);
+}
+
+/* *******************
+   * COURSES SECTION *
+   ******************* */
+
+#courses {
+  background-color: rgb(234, 235, 236);
+  padding: 2rem 3.5rem 1rem 3.5rem;
+}
+
+#courses h2 {
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
+
+.courses-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course {
+  max-width: 29%;
+  height: auto;
+  margin: 1rem;
+  background-color: white;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.course h3 {
+  width: 100%;
+  margin: 1rem 0.5rem 0.5rem 1rem;
+  text-align: left;
+}
+
+.course h5 {
+  width: 100%;
+  height: auto;
+  color: rgb(74, 74, 74);
+  font-size: 0.875rem;
+  font-weight: 100;
+  text-align: left;
+  line-height: 1.4;
+  margin: 0.5rem 1rem;
+}
+
+.course p {
+  width: 85%;
+  margin: 0 1rem 1.5rem 1rem;
+  text-align: left;
 }
