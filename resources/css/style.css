@@ -27,10 +27,8 @@ body {
 
 .section-left {
   display: inline-block;
-/*  width: calc(60% - 3rem); */
   width: 60%;
   height: auto;
-/*  margin: 2rem 0.75rem 2rem 1.5rem; */
   padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
@@ -171,6 +169,14 @@ h4 {
   justify-content: space-between;
 }
 
+#info .info-desktop-img {
+  display: block;
+}
+
+#info .info-mobile-img {
+  display: none;
+}
+
 #orientation {
   margin-top: 1rem;
 }
@@ -224,7 +230,6 @@ p {
 }
 
 .info-item-text {
-  display: inline-block;
   width: 65%;
   margin: 1rem 0;
   display: flex;
@@ -310,27 +315,27 @@ p {
 }
 
 /* ******************
-   * THESIS SECTION *
+   * THESES SECTION *
    ****************** */
-#thesis {
+#theses {
  background-color: white;
 }
 
-#thesis h2 {
+#theses h2 {
   width: 100%;
   margin: 2rem auto 0 auto;
   text-align: center;
 }
 
-#thesis h3 {
+#theses h3 {
   margin: 0.75rem 0;
 }
 
-#thesis p {
+#theses p {
   color: rgb(110, 110, 110);
 }
 
-#thesis .section-right {
+#theses .section-right {
  justify-content: flex-start;
 }
 
@@ -387,47 +392,280 @@ p {
    * COPYRIGHT SECTION *
    ********************* */
 
-   footer {
-     width: 100%;
-     height: auto;
-     display: inline-block;
-   }
+ footer {
+   width: 100%;
+   height: auto;
+   display: inline-block;
+ }
 
-   #copyright {
-     width: 100%;
-     height: auto;
-     background-color: white;
-     border-top: 2px solid rgb(232, 234, 234);
-     margin: 0;
-     display: inline-flex;
-     justify-content: space-between;
-   }
+ #copyright {
+   width: 100%;
+   height: auto;
+   background-color: white;
+   border-top: 2px solid rgb(232, 234, 234);
+   margin: 0;
+   display: inline-flex;
+   justify-content: space-between;
+ }
 
-   #copyright-message {
-     height: 2rem;
-     margin: 1rem 1.5rem;
-   }
+ #copyright-message {
+   height: 2rem;
+   margin: 1rem 1.5rem;
+ }
 
-   #copyright-message span {
-     font-size: 0.75rem;
-     padding-top: 0.5rem;
-     color: rgb(110, 110, 110);
-   }
+ #copyright-message span {
+   font-size: 0.75rem;
+   padding-top: 0.5rem;
+   color: rgb(110, 110, 110);
+ }
 
-   #copyright-links {
-     margin: 1rem 1.5rem;
-     display: inline-flex;
-     justify-content: space-between;
-     align-items: flex-start;
-   }
+ #copyright-links {
+   margin: 1rem 1.5rem;
+   display: inline-flex;
+   justify-content: space-between;
+   align-items: flex-start;
+ }
 
-   #copyright-links span {
-     padding-left: 0.75rem;
-     color: rgb(110, 110, 110);
-   }
+ #copyright-links span {
+   padding-left: 0.75rem;
+   color: rgb(110, 110, 110);
+ }
 
-   #copyright-links a {
-     color: rgb(110, 110, 110);
-     font-size: 0.75rem;
-     text-decoration: none;
-   }
+ #copyright-links a {
+   color: rgb(110, 110, 110);
+   font-size: 0.75rem;
+   text-decoration: none;
+ }
+
+/* ********************************************************************************************************* */
+
+@media only screen and (max-width: 480px) {
+  /* ********************
+     * UNIVERSAL STYLES *
+     ******************** */
+
+  .container {
+    width: 100%;
+  }
+
+  .section {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+
+  .section-left {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-left img {
+    width: 100%;
+    height: auto;
+    margin: 1px;
+  }
+
+  .section-right {
+    width: 100%;
+    margin: 0;
+    display: bock;
+  }
+
+  /* ******************
+     * BANNER SECTION *
+     ****************** */
+
+  #banner-title {
+    display: none;
+  }
+
+  #nav-list {
+    display: none;
+  }
+
+  #nav-icons {
+    width: 100%;
+    margin: 1rem 1.5rem;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* *****************
+     * LEARN SECTION *
+     ***************** */
+
+  h1 {
+    width: 100%;
+    margin: 2rem 1rem 1rem 1rem;
+  }
+
+  h3 {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  h4 {
+    width: calc(100% - 2rem);
+    margin: 0.5rem 1rem 2rem 1rem;
+  }
+
+  /* ****************
+     * INFO SECTION *
+     **************** */
+
+  #info .section-left {
+    display: none;
+  }
+
+  #info .section-right {
+    display: block;
+    background-color: rgb(243, 245, 245);
+  }
+
+  #info .info-desktop-img {
+    display: none;
+  }
+
+  #info .info-mobile-img {
+    display: block;
+  }
+
+  .info-item {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .info-item-image {
+    display: block;
+    width: 100%;
+  }
+
+  .info-item-image img {
+    width: calc(100% - 2rem);
+    height: auto;
+  }
+
+  .info-item-text {
+    display: block;
+    width: 100%;
+    margin: 1rem 2rem;
+  }
+
+  #orientation {
+    margin-top: 0;
+  }
+
+  #guest-lecture {
+    padding-bottom: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  /* *******************
+     * COURSES SECTION *
+     ******************* */
+
+  #courses {
+    padding: 2rem 0;
+  }
+
+  #courses h2 {
+    padding: 0;
+  }
+
+  .courses-container {
+    width: 100%;
+    display: block;
+  }
+
+  .course {
+    display: block;
+    max-width: calc(100% - 2rem);
+    margin: 0 1rem;
+    background-color: rgb(216, 216, 216);
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .course h3 {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .course h5 {
+    display: none;
+  }
+
+  .course p {
+    display: none;
+  }
+
+  /* ******************
+     * THESES SECTION *
+     ****************** */
+  #theses {
+    display: block;
+    background-color: rgb(243, 245, 245);
+    padding: 2rem 0 1.5rem 0;
+    margin: 0;
+  }
+
+  #theses h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  #theses h3 {
+    display: none;
+  }
+
+  #theses p {
+    display: none;
+  }
+
+  #theses .section {
+    display: block;
+  }
+
+  #theses .section-right {
+    display: none;
+  }
+
+  .section-left video {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  /* *********************
+     * COPYRIGHT SECTION *
+     ********************* */
+
+  #copyright {
+    background-color: rgb(243, 245, 245);
+    border-top: none;
+    margin: 0;
+    display: inline-block;
+  }
+
+  #copyright-message {
+    height: 2rem;
+    margin: 1rem;
+  }
+
+  #copyright-message span {
+    font-size: 0.75rem;
+    padding-top: 0.5rem;
+    color: rgb(110, 110, 110);
+  }
+
+  #copyright-links {
+    display: none;
+  }
+}
